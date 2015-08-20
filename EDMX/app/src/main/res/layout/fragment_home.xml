@@ -1,0 +1,1657 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.festivalguide.v2.edmx.com.festivalguide.v2.edmx.com.festivalguide.v2.edmx.fragments.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="EDMX"
+                    android:textAllCaps="true"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/pager"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/black" />
+            </LinearLayout>
+
+            <com.viewpagerindicator.CirclePageIndicator
+                android:id="@+id/indicator"
+                android:layout_width="fill_parent"
+                android:layout_height="15dp"
+                android:layout_marginTop="10dp"
+                android:theme="@style/CustomCirclePageIndicator"
+
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="1dp"
+                        android:text="Recommended"
+                        android:textAllCaps="true"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:orientation="horizontal">
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbars="none">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:id="@+id/flag"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="160dp"
+                                    android:scaleType="centerCrop"
+                                    android:adjustViewBounds="true"
+                                    android:background="@drawable/balloons"
+                                    android:padding="1dp" />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:layout_marginTop="-15dp"
+                                    android:orientation="vertical">
+                                    <View
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="15dp"
+                                        android:alpha="0.3"
+                                        android:background="@android:color/black"/>
+                                    <TextView
+                                        android:id="@+id/checknew"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="-18dp"
+                                        android:textAlignment="center"
+                                        android:text="Balloons"
+                                        android:layout_gravity="center_horizontal"
+                                        android:textColor="@android:color/white"
+                                        />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dp"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:id="@+id/flag2"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="160dp"
+                                    android:scaleType="centerCrop"
+                                    android:adjustViewBounds="true"
+                                    android:background="@drawable/applemusic"
+                                    android:padding="1dp" />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:layout_marginTop="-15dp"
+                                    android:orientation="vertical">
+                                    <View
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="15dp"
+                                        android:alpha="0.3"
+                                        android:background="@android:color/black"/>
+                                    <TextView
+                                        android:id="@+id/checknew2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="-18dp"
+                                        android:textAlignment="center"
+                                        android:text="Apple Music"
+                                        android:layout_gravity="center_horizontal"
+                                        android:textColor="@android:color/white"
+                                        />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dp"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="160dp"
+                                    android:scaleType="centerCrop"
+                                    android:adjustViewBounds="true"
+                                    android:background="@drawable/orangejuice"
+                                    android:padding="1dp" />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:layout_marginTop="-15dp"
+                                    android:orientation="vertical">
+                                    <View
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="15dp"
+                                        android:alpha="0.3"
+                                        android:background="@android:color/black"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="-18dp"
+                                        android:textAlignment="center"
+                                        android:text="Orange Juice"
+                                        android:layout_gravity="center_horizontal"
+                                        android:textColor="@android:color/white"
+                                        />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dp"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="160dp"
+                                    android:scaleType="centerCrop"
+                                    android:adjustViewBounds="true"
+                                    android:background="@drawable/glimmer"
+                                    android:padding="1dp" />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:layout_marginTop="-15dp"
+                                    android:orientation="vertical">
+                                    <View
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="15dp"
+                                        android:alpha="0.3"
+                                        android:background="@android:color/black"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="-18dp"
+                                        android:textAlignment="center"
+                                        android:text="Glimmer Image"
+                                        android:layout_gravity="center_horizontal"
+                                        android:textColor="@android:color/white"
+                                        />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dp"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="160dp"
+                                    android:scaleType="centerCrop"
+                                    android:adjustViewBounds="true"
+                                    android:background="@drawable/balloons"
+                                    android:padding="1dp" />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:layout_marginTop="-15dp"
+                                    android:orientation="vertical">
+                                    <View
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="15dp"
+                                        android:alpha="0.3"
+                                        android:background="@android:color/black"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="-18dp"
+                                        android:textAlignment="center"
+                                        android:text="Balloons Images"
+                                        android:layout_gravity="center_horizontal"
+                                        android:textColor="@android:color/white"
+                                        />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dp"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="160dp"
+                                    android:scaleType="centerCrop"
+                                    android:adjustViewBounds="true"
+                                    android:background="@drawable/glimmer"
+                                    android:padding="1dp" />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:layout_marginTop="-15dp"
+                                    android:orientation="vertical">
+                                    <View
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="15dp"
+                                        android:alpha="0.3"
+                                        android:background="@android:color/black"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="-18dp"
+                                        android:textAlignment="center"
+                                        android:text="Glimmer Image"
+                                        android:layout_gravity="center_horizontal"
+                                        android:textColor="@android:color/white"
+                                        />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dp"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="160dp"
+                                    android:scaleType="centerCrop"
+                                    android:adjustViewBounds="true"
+                                    android:background="@drawable/balloons"
+                                    android:padding="1dp" />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:layout_marginTop="-15dp"
+                                    android:orientation="vertical">
+                                    <View
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="15dp"
+                                        android:alpha="0.3"
+                                        android:background="@android:color/black"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="-18dp"
+                                        android:textAlignment="center"
+                                        android:text="Balloons Images"
+                                        android:layout_gravity="center_horizontal"
+                                        android:textColor="@android:color/white"
+                                        />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dp"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="160dp"
+                                    android:scaleType="centerCrop"
+                                    android:adjustViewBounds="true"
+                                    android:background="@drawable/orangejuice"
+                                    android:padding="1dp" />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:layout_marginTop="-15dp"
+                                    android:orientation="vertical">
+                                    <View
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="15dp"
+                                        android:alpha="0.3"
+                                        android:background="@android:color/black"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="-18dp"
+                                        android:textAlignment="center"
+                                        android:text="Orange Juice"
+                                        android:layout_gravity="center_horizontal"
+                                        android:textColor="@android:color/white"
+                                        />
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </LinearLayout>
+            </LinearLayout>
+
+<!-- end -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="1dp"
+                        android:text="Artists"
+                        android:textAllCaps="true"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:orientation="horizontal">
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbars="none">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+                                <ImageView
+
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="160dp"
+                                    android:scaleType="centerCrop"
+                                    android:adjustViewBounds="true"
+                                    android:background="@drawable/balloons"
+                                    android:padding="1dp" />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:layout_marginTop="-15dp"
+                                    android:orientation="vertical">
+                                    <View
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="15dp"
+                                        android:alpha="0.3"
+                                        android:background="@android:color/black"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="-18dp"
+                                        android:textAlignment="center"
+                                        android:text="Ballons Image"
+                                        android:layout_gravity="center_horizontal"
+                                        android:textColor="@android:color/white"
+                                        />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dp"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="160dp"
+                                    android:scaleType="centerCrop"
+                                    android:adjustViewBounds="true"
+                                    android:background="@drawable/orangejuice"
+                                    android:padding="1dp" />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:layout_marginTop="-15dp"
+                                    android:orientation="vertical">
+                                    <View
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="15dp"
+                                        android:alpha="0.3"
+                                        android:background="@android:color/black"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="-18dp"
+                                        android:textAlignment="center"
+                                        android:text="Orange Juice"
+                                        android:layout_gravity="center_horizontal"
+                                        android:textColor="@android:color/white"
+                                        />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dp"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="160dp"
+                                    android:scaleType="centerCrop"
+                                    android:adjustViewBounds="true"
+                                    android:background="@drawable/glimmer"
+                                    android:padding="1dp" />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:layout_marginTop="-15dp"
+                                    android:orientation="vertical">
+                                    <View
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="15dp"
+                                        android:alpha="0.3"
+                                        android:background="@android:color/black"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="-18dp"
+                                        android:textAlignment="center"
+                                        android:text="Glimmer Image"
+                                        android:layout_gravity="center_horizontal"
+                                        android:textColor="@android:color/white"
+                                        />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dp"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="160dp"
+                                    android:scaleType="centerCrop"
+                                    android:adjustViewBounds="true"
+                                    android:background="@drawable/applemusic"
+                                    android:padding="1dp" />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:layout_marginTop="-15dp"
+                                    android:orientation="vertical">
+                                    <View
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="15dp"
+                                        android:alpha="0.3"
+                                        android:background="@android:color/black"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="-18dp"
+                                        android:textAlignment="center"
+                                        android:text="Apple Music"
+                                        android:layout_gravity="center_horizontal"
+                                        android:textColor="@android:color/white"
+                                        />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dp"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="160dp"
+                                    android:scaleType="centerCrop"
+                                    android:adjustViewBounds="true"
+                                    android:background="@drawable/orangejuice"
+                                    android:padding="1dp" />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:layout_marginTop="-15dp"
+                                    android:orientation="vertical">
+                                    <View
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="15dp"
+                                        android:alpha="0.3"
+                                        android:background="@android:color/black"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="-18dp"
+                                        android:textAlignment="center"
+                                        android:text="Orange Juice"
+                                        android:layout_gravity="center_horizontal"
+                                        android:textColor="@android:color/white"
+                                        />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dp"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="160dp"
+                                    android:scaleType="centerCrop"
+                                    android:adjustViewBounds="true"
+                                    android:background="@drawable/applemusic"
+                                    android:padding="1dp" />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:layout_marginTop="-15dp"
+                                    android:orientation="vertical">
+                                    <View
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="15dp"
+                                        android:alpha="0.3"
+                                        android:background="@android:color/black"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="-18dp"
+                                        android:textAlignment="center"
+                                        android:text="Apple Music"
+                                        android:layout_gravity="center_horizontal"
+                                        android:textColor="@android:color/white"
+                                        />
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </LinearLayout>
+            </LinearLayout>
+<!-- end -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="1dp"
+                        android:text="Events"
+                        android:textAllCaps="true"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:orientation="horizontal">
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbars="none">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+                                <ImageView
+
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="160dp"
+                                    android:scaleType="centerCrop"
+                                    android:adjustViewBounds="true"
+                                    android:background="@drawable/balloons"
+                                    android:padding="1dp" />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:layout_marginTop="-15dp"
+                                    android:orientation="vertical">
+                                    <View
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="15dp"
+                                        android:alpha="0.3"
+                                        android:background="@android:color/black"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="-18dp"
+                                        android:textAlignment="center"
+                                        android:text="Ballons Image"
+                                        android:layout_gravity="center_horizontal"
+                                        android:textColor="@android:color/white"
+                                        />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dp"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="160dp"
+                                    android:scaleType="centerCrop"
+                                    android:adjustViewBounds="true"
+                                    android:background="@drawable/applemusic"
+                                    android:padding="1dp" />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:layout_marginTop="-15dp"
+                                    android:orientation="vertical">
+                                    <View
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="15dp"
+                                        android:alpha="0.3"
+                                        android:background="@android:color/black"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="-18dp"
+                                        android:textAlignment="center"
+                                        android:text="Apple Music"
+                                        android:layout_gravity="center_horizontal"
+                                        android:textColor="@android:color/white"
+                                        />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dp"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="160dp"
+                                    android:scaleType="centerCrop"
+                                    android:adjustViewBounds="true"
+                                    android:background="@drawable/orangejuice"
+                                    android:padding="1dp" />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:layout_marginTop="-15dp"
+                                    android:orientation="vertical">
+                                    <View
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="15dp"
+                                        android:alpha="0.3"
+                                        android:background="@android:color/black"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="-18dp"
+                                        android:textAlignment="center"
+                                        android:text="Orange Juice"
+                                        android:layout_gravity="center_horizontal"
+                                        android:textColor="@android:color/white"
+                                        />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dp"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="160dp"
+                                    android:scaleType="centerCrop"
+                                    android:adjustViewBounds="true"
+                                    android:background="@drawable/glimmer"
+                                    android:padding="1dp" />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:layout_marginTop="-15dp"
+                                    android:orientation="vertical">
+                                    <View
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="15dp"
+                                        android:alpha="0.3"
+                                        android:background="@android:color/black"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="-18dp"
+                                        android:textAlignment="center"
+                                        android:text="Glimmer Images"
+                                        android:layout_gravity="center_horizontal"
+                                        android:textColor="@android:color/white"
+                                        />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dp"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="160dp"
+                                    android:scaleType="centerCrop"
+                                    android:adjustViewBounds="true"
+                                    android:background="@drawable/orangejuice"
+                                    android:padding="1dp" />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:layout_marginTop="-15dp"
+                                    android:orientation="vertical">
+                                    <View
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="15dp"
+                                        android:alpha="0.3"
+                                        android:background="@android:color/black"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="-18dp"
+                                        android:textAlignment="center"
+                                        android:text="Orange Juice"
+                                        android:layout_gravity="center_horizontal"
+                                        android:textColor="@android:color/white"
+                                        />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dp"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="160dp"
+                                    android:scaleType="centerCrop"
+                                    android:adjustViewBounds="true"
+                                    android:background="@drawable/balloons"
+                                    android:padding="1dp" />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:layout_marginTop="-15dp"
+                                    android:orientation="vertical">
+                                    <View
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="15dp"
+                                        android:alpha="0.3"
+                                        android:background="@android:color/black"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="-18dp"
+                                        android:textAlignment="center"
+                                        android:text="Balloons Image"
+                                        android:layout_gravity="center_horizontal"
+                                        android:textColor="@android:color/white"
+                                        />
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </LinearLayout>
+            </LinearLayout>
+<!-- end -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="1dp"
+                        android:text="Festivals"
+                        android:textAllCaps="true"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:orientation="horizontal">
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbars="none">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+                                <ImageView
+
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="160dp"
+                                    android:scaleType="centerCrop"
+                                    android:adjustViewBounds="true"
+                                    android:background="@drawable/balloons"
+                                    android:padding="1dp" />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:layout_marginTop="-15dp"
+                                    android:orientation="vertical">
+                                    <View
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="15dp"
+                                        android:alpha="0.3"
+                                        android:background="@android:color/black"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="-18dp"
+                                        android:textAlignment="center"
+                                        android:text="Ballons Images"
+                                        android:layout_gravity="center_horizontal"
+                                        android:textColor="@android:color/white"
+                                        />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dp"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="160dp"
+                                    android:scaleType="centerCrop"
+                                    android:adjustViewBounds="true"
+                                    android:background="@drawable/orangejuice"
+                                    android:padding="1dp" />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:layout_marginTop="-15dp"
+                                    android:orientation="vertical">
+                                    <View
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="15dp"
+                                        android:alpha="0.3"
+                                        android:background="@android:color/black"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="-18dp"
+                                        android:textAlignment="center"
+                                        android:text="Orange Juice"
+                                        android:layout_gravity="center_horizontal"
+                                        android:textColor="@android:color/white"
+                                        />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dp"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="160dp"
+                                    android:scaleType="centerCrop"
+                                    android:adjustViewBounds="true"
+                                    android:background="@drawable/applemusic"
+                                    android:padding="1dp" />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:layout_marginTop="-15dp"
+                                    android:orientation="vertical">
+                                    <View
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="15dp"
+                                        android:alpha="0.3"
+                                        android:background="@android:color/black"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="-18dp"
+                                        android:textAlignment="center"
+                                        android:text="Apple Music"
+                                        android:layout_gravity="center_horizontal"
+                                        android:textColor="@android:color/white"
+                                        />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dp"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="160dp"
+                                    android:scaleType="centerCrop"
+                                    android:adjustViewBounds="true"
+                                    android:background="@drawable/glimmer"
+                                    android:padding="1dp" />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:layout_marginTop="-15dp"
+                                    android:orientation="vertical">
+                                    <View
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="15dp"
+                                        android:alpha="0.3"
+                                        android:background="@android:color/black"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="-18dp"
+                                        android:textAlignment="center"
+                                        android:text="Glimmer Image"
+                                        android:layout_gravity="center_horizontal"
+                                        android:textColor="@android:color/white"
+                                        />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dp"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="160dp"
+                                    android:scaleType="centerCrop"
+                                    android:adjustViewBounds="true"
+                                    android:background="@drawable/balloons"
+                                    android:padding="1dp" />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:layout_marginTop="-15dp"
+                                    android:orientation="vertical">
+                                    <View
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="15dp"
+                                        android:alpha="0.3"
+                                        android:background="@android:color/black"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="-18dp"
+                                        android:textAlignment="center"
+                                        android:text="Balloons Image"
+                                        android:layout_gravity="center_horizontal"
+                                        android:textColor="@android:color/white"
+                                        />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dp"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="160dp"
+                                    android:scaleType="centerCrop"
+                                    android:adjustViewBounds="true"
+                                    android:background="@drawable/applemusic"
+                                    android:padding="1dp" />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:layout_marginTop="-15dp"
+                                    android:orientation="vertical">
+                                    <View
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="15dp"
+                                        android:alpha="0.3"
+                                        android:background="@android:color/black"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="-18dp"
+                                        android:textAlignment="center"
+                                        android:text="Apple Music"
+                                        android:layout_gravity="center_horizontal"
+                                        android:textColor="@android:color/white"
+                                        />
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </LinearLayout>
+            </LinearLayout>
+<!-- end -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="1dp"
+                        android:text="Participation"
+                        android:textAllCaps="true"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:orientation="horizontal">
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbars="none">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+                                <ImageView
+
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="160dp"
+                                    android:scaleType="centerCrop"
+                                    android:adjustViewBounds="true"
+                                    android:background="@drawable/balloons"
+                                    android:padding="1dp" />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:layout_marginTop="-15dp"
+                                    android:orientation="vertical">
+                                    <View
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="15dp"
+                                        android:alpha="0.3"
+                                        android:background="@android:color/black"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="-18dp"
+                                        android:textAlignment="center"
+                                        android:text="Ballons Images"
+                                        android:layout_gravity="center_horizontal"
+                                        android:textColor="@android:color/white"
+                                        />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dp"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="160dp"
+                                    android:scaleType="centerCrop"
+                                    android:adjustViewBounds="true"
+                                    android:background="@drawable/orangejuice"
+                                    android:padding="1dp" />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:layout_marginTop="-15dp"
+                                    android:orientation="vertical">
+                                    <View
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="15dp"
+                                        android:alpha="0.3"
+                                        android:background="@android:color/black"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="-18dp"
+                                        android:textAlignment="center"
+                                        android:text="Orange Juice"
+                                        android:layout_gravity="center_horizontal"
+                                        android:textColor="@android:color/white"
+                                        />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dp"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="160dp"
+                                    android:scaleType="centerCrop"
+                                    android:adjustViewBounds="true"
+                                    android:background="@drawable/applemusic"
+                                    android:padding="1dp" />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:layout_marginTop="-15dp"
+                                    android:orientation="vertical">
+                                    <View
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="15dp"
+                                        android:alpha="0.3"
+                                        android:background="@android:color/black"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="-18dp"
+                                        android:textAlignment="center"
+                                        android:text="Apple Music"
+                                        android:layout_gravity="center_horizontal"
+                                        android:textColor="@android:color/white"
+                                        />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dp"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="160dp"
+                                    android:scaleType="centerCrop"
+                                    android:adjustViewBounds="true"
+                                    android:background="@drawable/glimmer"
+                                    android:padding="1dp" />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:layout_marginTop="-15dp"
+                                    android:orientation="vertical">
+                                    <View
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="15dp"
+                                        android:alpha="0.3"
+                                        android:background="@android:color/black"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="-18dp"
+                                        android:textAlignment="center"
+                                        android:text="Glimmer Image"
+                                        android:layout_gravity="center_horizontal"
+                                        android:textColor="@android:color/white"
+                                        />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dp"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="160dp"
+                                    android:scaleType="centerCrop"
+                                    android:adjustViewBounds="true"
+                                    android:background="@drawable/balloons"
+                                    android:padding="1dp" />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:layout_marginTop="-15dp"
+                                    android:orientation="vertical">
+                                    <View
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="15dp"
+                                        android:alpha="0.3"
+                                        android:background="@android:color/black"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="-18dp"
+                                        android:textAlignment="center"
+                                        android:text="Balloons Image"
+                                        android:layout_gravity="center_horizontal"
+                                        android:textColor="@android:color/white"
+                                        />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dp"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="160dp"
+                                    android:scaleType="centerCrop"
+                                    android:adjustViewBounds="true"
+                                    android:background="@drawable/applemusic"
+                                    android:padding="1dp" />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:layout_marginTop="-15dp"
+                                    android:orientation="vertical">
+                                    <View
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="15dp"
+                                        android:alpha="0.3"
+                                        android:background="@android:color/black"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="-18dp"
+                                        android:textAlignment="center"
+                                        android:text="Apple Music"
+                                        android:layout_gravity="center_horizontal"
+                                        android:textColor="@android:color/white"
+                                        />
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </LinearLayout>
+            </LinearLayout>
+<!-- end -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="1dp"
+                        android:text="EDMX TV"
+                        android:textAllCaps="true"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:orientation="horizontal">
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbars="none">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+                                <ImageView
+
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="160dp"
+                                    android:scaleType="centerCrop"
+                                    android:adjustViewBounds="true"
+                                    android:background="@drawable/balloons"
+                                    android:padding="1dp" />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:layout_marginTop="-15dp"
+                                    android:orientation="vertical">
+                                    <View
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="15dp"
+                                        android:alpha="0.3"
+                                        android:background="@android:color/black"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="-18dp"
+                                        android:textAlignment="center"
+                                        android:text="Ballons Images"
+                                        android:layout_gravity="center_horizontal"
+                                        android:textColor="@android:color/white"
+                                        />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dp"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="160dp"
+                                    android:scaleType="centerCrop"
+                                    android:adjustViewBounds="true"
+                                    android:background="@drawable/orangejuice"
+                                    android:padding="1dp" />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:layout_marginTop="-15dp"
+                                    android:orientation="vertical">
+                                    <View
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="15dp"
+                                        android:alpha="0.3"
+                                        android:background="@android:color/black"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="-18dp"
+                                        android:textAlignment="center"
+                                        android:text="Orange Juice"
+                                        android:layout_gravity="center_horizontal"
+                                        android:textColor="@android:color/white"
+                                        />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dp"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="160dp"
+                                    android:scaleType="centerCrop"
+                                    android:adjustViewBounds="true"
+                                    android:background="@drawable/applemusic"
+                                    android:padding="1dp" />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:layout_marginTop="-15dp"
+                                    android:orientation="vertical">
+                                    <View
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="15dp"
+                                        android:alpha="0.3"
+                                        android:background="@android:color/black"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="-18dp"
+                                        android:textAlignment="center"
+                                        android:text="Apple Music"
+                                        android:layout_gravity="center_horizontal"
+                                        android:textColor="@android:color/white"
+                                        />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dp"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="160dp"
+                                    android:scaleType="centerCrop"
+                                    android:adjustViewBounds="true"
+                                    android:background="@drawable/glimmer"
+                                    android:padding="1dp" />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:layout_marginTop="-15dp"
+                                    android:orientation="vertical">
+                                    <View
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="15dp"
+                                        android:alpha="0.3"
+                                        android:background="@android:color/black"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="-18dp"
+                                        android:textAlignment="center"
+                                        android:text="Glimmer Image"
+                                        android:layout_gravity="center_horizontal"
+                                        android:textColor="@android:color/white"
+                                        />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dp"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="160dp"
+                                    android:scaleType="centerCrop"
+                                    android:adjustViewBounds="true"
+                                    android:background="@drawable/balloons"
+                                    android:padding="1dp" />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:layout_marginTop="-15dp"
+                                    android:orientation="vertical">
+                                    <View
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="15dp"
+                                        android:alpha="0.3"
+                                        android:background="@android:color/black"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="-18dp"
+                                        android:textAlignment="center"
+                                        android:text="Balloons Image"
+                                        android:layout_gravity="center_horizontal"
+                                        android:textColor="@android:color/white"
+                                        />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dp"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="160dp"
+                                    android:scaleType="centerCrop"
+                                    android:adjustViewBounds="true"
+                                    android:background="@drawable/applemusic"
+                                    android:padding="1dp" />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:layout_marginTop="-15dp"
+                                    android:orientation="vertical">
+                                    <View
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="15dp"
+                                        android:alpha="0.3"
+                                        android:background="@android:color/black"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="-18dp"
+                                        android:textAlignment="center"
+                                        android:text="Apple Music"
+                                        android:layout_gravity="center_horizontal"
+                                        android:textColor="@android:color/white"
+                                        />
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </LinearLayout>
+            </LinearLayout>
+<!-- end -->
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
